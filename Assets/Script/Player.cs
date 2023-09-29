@@ -67,4 +67,14 @@ public class Player : MonoBehaviour
         }
     }
 
+
+    private void OnColissionEnter(Collider collider)
+    {
+        if (collider.gameObject.tag == "tiro")
+        {
+            Debug.Log("Perdendo vida");
+
+        }
+
+    }
 }
