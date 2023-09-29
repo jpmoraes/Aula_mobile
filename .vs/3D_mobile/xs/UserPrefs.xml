@@ -1,17 +1,15 @@
 ﻿<Properties StartupConfiguration="{E83AE448-BE68-89C9-7279-D1BDC8042BC4}|">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Player.cs">
-    <Files>
-      <File FileName="Assets/Player.cs" Line="12" Column="5" />
-      <File FileName="Assets/Pause.cs" />
-      <File FileName="Assets/Perguntas.cs" Line="40" Column="9" />
-      <File FileName="Assets/Bau.cs" Line="13" Column="40" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f5311177-64fd-48f4-9842-b6bd6db2848b" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/ControllerPhone.cs">
+    <Files>
+      <File FileName="Assets/Script/Enemy.cs" />
+      <File FileName="Assets/Script/ControllerPhone.cs" Line="14" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6290d7eb-020c-4935-9a99-e2d59cf46d8a" />
 </Properties>

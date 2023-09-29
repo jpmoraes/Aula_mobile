@@ -35,10 +35,10 @@ public class Enemy : MonoBehaviour
     }
     void Update()
     {
-        transform.LookAt(target.transform.position);
 
         if (Vector3.Distance(target.transform.position, transform.position) >= agroRange)
         {
+            anim.SetBool("attack", false);
             if (isMoving)
             {
                 moveCounter -= Time.deltaTime;
@@ -61,17 +61,27 @@ public class Enemy : MonoBehaviour
                     isMoving = true;
                     RandomMoveCounter();
                     moveDirection = new Vector3(Random.Range(-0.5f, 0.5f) * moveSpeed, 0.0f, Random.Range(-0.5f, 0.5f));
+                    
                     anim.SetBool("walk", false);
                 }
             }
+
+
+            if (rb.velocity != Vector3.zero)
+            {
+                //Andar virado para frente
+                transform.rotation = Quaternion.LookRotation(rb.velocity.normalized);
+            }
+
         }
         else
         {
+            transform.LookAt(target.transform.position);
             // Dentro do alcance de agro, move em direção ao jogador
             Vector3 dirToPlayer = (target.transform.position - transform.position).normalized;
             rb.velocity = dirToPlayer * moveSpeed;
             anim.SetBool("walk", true);
-
+            anim.SetBool("attack", true);
             if (Time.time >= nextFireTime)
             {
                 AtackEnemy();

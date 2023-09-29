@@ -2767,7 +2767,7 @@ MonoBehaviour:
   rb: {fileID: 2042325722}
   waitTime: 3
   moveTime: 5
-  moveSpeed: 5
+  moveSpeed: 3
   speed: 3
   fireRate: 1
 --- !u!54 &2042325722
